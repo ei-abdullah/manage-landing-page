@@ -11,15 +11,19 @@ function Button({
 }) {
   return (
     <motion.button
-      initial={{ scale: 1 }}
+      initial={{
+        scale: 1,
+        boxShadow: "2px 2px 22px -9px #5d5151"
+      }}
       whileHover={hover && {
-        scale: 1.05,
+        scale: 1.02,
+        boxShadow: "6.5px 6.5px 32px -9px #5d5151",
       }}
       whileTap={
-        hover && { scale: 0.95, rotate: "-1deg" }
+        hover && { scale: 0.98 }
       }
       transition={{ duration: 0.05 }}
-      className={`w-fit h-11 rounded-3xl px-8 shadow-md ${backgroundColor} ${textColor} ${className} ${hover && "shadow-2xl"}`}
+      className={`w-fit h-11 rounded-3xl px-8 ${backgroundColor} ${textColor} ${className}`}
     >
       {children}
     </motion.button >

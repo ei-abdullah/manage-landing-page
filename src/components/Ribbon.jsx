@@ -15,10 +15,12 @@ function Ribbon() {
                 className="block absolute top-12 left-0 lg:hidden"
             />
 
-            <h3 className="z-20 text-5xl lg:text-4xl w-full lg:w-4/12 text-white text-center lg:text-left">Simplify how your team works today</h3>
-            <Button backgroundColor="bg-veryLightGray" textColor="text-red">
-                Get Started
-            </Button>
+            <h3 className="text-5xl lg:text-4xl w-full lg:w-4/12 text-white text-center lg:text-left">Simplify how your team works today</h3>
+            <div className="z-10">
+                <Button backgroundColor="bg-veryLightGray" textColor="text-red">
+                    Get Started
+                </Button>
+            </div>
         </div >
     )
 }
