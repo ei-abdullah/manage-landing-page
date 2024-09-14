@@ -1,4 +1,4 @@
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 
 import Button from "./Button";
 import { useState } from "react";
@@ -7,15 +7,15 @@ import { useState } from "react";
 function About() {
   const [hasAnimated, setHasAnimated] = useState(false)
   return (
-    <section className="flex flex-col-reverse items-center justify-evenly lg:flex-row">
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={hasAnimated && { opacity: 1 }}
-        whileInView={() => setHasAnimated(true)}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
-        className="flex flex-col justify-center items-center gap-7 w-11/12 text-center lg:w-2/5 lg:text-left lg:items-start "
-      >
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={hasAnimated && { opacity: 1 }}
+      whileInView={() => setHasAnimated(true)}
+      transition={{ duration: 1.5 }}
+      viewport={{ once: true }}
+      className="flex flex-col-reverse items-center justify-evenly lg:flex-row"
+    >
+      <div className="flex flex-col justify-center items-center gap-7 w-11/12 text-center lg:w-2/5 lg:text-left lg:items-start ">
         <h1
           className="text-3xl sm:text-5xl md:text-6xl lg:w-2/3 font-bold text-veryDarkBlue w-11/12"
         >
@@ -26,11 +26,11 @@ function About() {
           while keeping the larger team goals in view
         </p>
         <Button>Get Started</Button>
-      </motion.div>
+      </div>
 
-      <img src="./images/illustration-intro.svg" alt="illustration-intro" className="w-11/12 lg:w-2/5" />
+      <img src="./src/assets/illustration-intro.svg" alt="illustration-intro" className="w-11/12 lg:w-2/5" />
 
-    </section>
+    </motion.section>
   );
 }
 

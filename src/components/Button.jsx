@@ -6,14 +6,15 @@ function Button({
   backgroundColor = "bg-red",
   textColor = "text-veryLightGray",
   hover = true,
-  tiltRight = false,
   className = "",
   children,
 }) {
   return (
     <motion.button
       initial={{ scale: 1 }}
-      whileHover={hover && { scale: 1.05 }}
+      whileHover={hover && {
+        scale: 1.05,
+      }}
       whileTap={
         hover && { scale: 0.95, rotate: "-1deg" }
       }

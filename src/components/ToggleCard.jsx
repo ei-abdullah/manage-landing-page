@@ -6,7 +6,7 @@ function ToggleCard() {
 
         <motion.div
 
-            className="mt-10 py-10 lg:hidden absolute w-4/5 top-20 left-1/2 transform -translate-x-1/2 m-auto flex flex-col justify-around items-center gap-10 bg-white font-bold text-veryDarkBlue rounded-xl border-2 shadow-2xl"
+            className="mt-10 py-10 lg:hidden absolute w-4/5 top-20 left-1/2 transform -translate-x-1/2 m-auto flex flex-col justify-around items-center gap-10 bg-white font-bold text-veryDarkBlue rounded-xl border-2 shadow-2xl z-20"
         >
             <p>Pricing</p>
             <p>Product</p>
