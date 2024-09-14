@@ -16,7 +16,7 @@ function Ribbon() {
             />
 
             <h3 className="z-20 text-5xl lg:text-4xl w-full lg:w-4/12 text-white text-center lg:text-left">Simplify how your team works today</h3>
-            <Button backgroundColor="white" color="red">
+            <Button backgroundColor="bg-veryLightGray" textColor="text-red">
                 Get Started
             </Button>
         </div >

@@ -1,3 +1,5 @@
+
+
 import Search from "./Search"
 import Button from "./Button"
 
@@ -44,7 +46,11 @@ function FooterContent() {
                 <Search />
                 <Button>Go</Button>
             </div>
-            <div className="absolute bottom-2 text-darkGrayishBlue">Copyright {new Date().getFullYear()}. All Rights Reserved</div>
+            <div className="absolute bottom-1 text-darkGrayishBlue">Copyright {new Date().getFullYear()}. All Rights Reserved</div>
+            <div className="absolute bottom-1 left-1 hidden lg:block text-attribution font-bold">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" className="hover:text-veryLightGray transition-all">Frontend Mentor</a>.
+                Coded by <a href="https://github.com/ei-abdullah" className="hover:text-veryLightGray transition-all">Abdullah Zafar</a>.
+            </div>
         </div>
     )
 }

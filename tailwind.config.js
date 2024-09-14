@@ -11,6 +11,8 @@ export default {
         veryDarkBlue: "rgb(15, 25, 65)",
         veryPaleRed: "rgb(255, 233, 231)",
         veryLightGray: "rgb(250, 250, 250)",
+
+        attribution: "rgb(23, 34, 79)",
       },
       fontFamily: {
         beVietnam: ["Be Vietnam Pro", "sans-serif"],

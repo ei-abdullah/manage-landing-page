@@ -1,21 +1,27 @@
+import { motion } from "framer-motion";
+
+
+
 function Button({
-  backgroundColor = "rgb(242, 76, 61)",
-  color = "rgb(250, 250, 250)",
+  backgroundColor = "bg-red",
+  textColor = "text-veryLightGray",
   hover = true,
+  tiltRight = false,
   className = "",
   children,
 }) {
   return (
-    <button
-      className={`w-fit h-11 rounded-3xl transition-all ease-in-out  px-8 ${hover ? "hover:shadow-2xl shadow-md hover:scale-105" : ""
-        } ${className}`}
-      style={{
-        backgroundColor: backgroundColor,
-        color: color,
-      }}
+    <motion.button
+      initial={{ scale: 1 }}
+      whileHover={hover && { scale: 1.05 }}
+      whileTap={
+        hover && { scale: 0.95, rotate: "-1deg" }
+      }
+      transition={{ duration: 0.05 }}
+      className={`w-fit h-11 rounded-3xl px-8 shadow-md ${backgroundColor} ${textColor} ${className} ${hover && "shadow-2xl"}`}
     >
       {children}
-    </button>
+    </motion.button >
   );
 }
 
