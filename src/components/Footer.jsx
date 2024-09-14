@@ -21,7 +21,7 @@ function Footer() {
 
 function FooterContent() {
     return (
-        <div className="h-full relative flex flex-col-reverse lg:flex-row justify-evenly items-center">
+        <div className="h-full relative flex flex-col-reverse lg:flex-row justify-evenly items-center z-10">
             <div className="flex flex-col justify-evenly h-fit gap-12 lg:gap-24">
                 <img src="./images/logo-white.svg" alt="logo" className="" />
                 <ul className="flex gap-4">
