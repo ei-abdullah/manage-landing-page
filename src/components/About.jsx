@@ -28,7 +28,7 @@ function About() {
         <Button>Get Started</Button>
       </div>
 
-      <img src="./src/assets/illustration-intro.svg" alt="illustration-intro" className="w-11/12 lg:w-2/5" />
+      <img src="./images/illustration-intro.svg" alt="illustration-intro" className="w-11/12 lg:w-2/5" />
 
     </motion.section>
   );
